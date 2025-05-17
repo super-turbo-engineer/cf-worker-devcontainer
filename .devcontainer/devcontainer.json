@@ -1,0 +1,11 @@
+﻿{
+"name": "Cloudflare Workers (TypeScript)",
+
+// Use our custom Dockerfile
+"build": {
+"dockerfile": "Dockerfile"
+},
+
+// Forward port for Wrangler
+"forwardPorts": [8976]
+}
