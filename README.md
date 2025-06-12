@@ -1,51 +1,50 @@
-﻿# Cloudflare Worker Development Container
+# Cloudflare Worker DevContainer Template
 
-This repository provides a development container setup for Cloudflare Worker projects. It can be used as a template for starting new Cloudflare Worker projects with a consistent, containerized development environment.
-
-## Features
-
-- Pre-configured development container for VS Code
-- Node.js development environment
-- Cloudflare Wrangler CLI pre-installed
-- Standard development tools and utilities
-- Git configuration
-
-## Prerequisites
-
-- Docker Desktop
-- Visual Studio Code with Remote - Containers extension
-- Git
-
-## Usage
-
-1. Fork this repository to start a new Cloudflare Worker project
-2. Clone your forked repository
-3. Open the project in VS Code
-4. When prompted, click 'Reopen in Container'
-5. The container will build and provide a ready-to-use development environment
-
-## Development Container Contents
-
-- Node.js
-- npm
-- Wrangler CLI
-- Git
-- Common development tools
+This repository is a template for quickly starting Cloudflare Worker projects with a pre-configured development container. Use this template to create your own repo and get a consistent, ready-to-code environment for Cloudflare Workers in VS Code.
 
 ## Getting Started
 
-1. After opening in container, initialize your Cloudflare Worker project:
-   `ash
-   wrangler init my-worker
-   `
+1. **Create Your Project from This Template**
+   - Click the **"Use this template"** button on the GitHub page.
+   - Choose a name for your new repository and create it.
 
-2. Follow the Wrangler CLI prompts to set up your project
+2. **Clone Your New Repository**
+   - Copy the new repository URL and run:
+     ```sh
+     git clone https://github.com/your-username/your-repo-name.git
+     cd your-repo-name
+     ```
 
-3. Start developing your Worker!
+3. **Open in VS Code**
+   - Open the project folder in Visual Studio Code.
+   - If prompted, select **"Reopen in Container"** to start the devcontainer.
 
-## Contributing
+4. **Initialize Your Cloudflare Worker Project**
+   - Open a new terminal in VS Code and run:
+     ```sh
+     ./cf-login.sh
+     wrangler init my-worker
+     ```
+   - Follow the prompts to set up your Worker.
 
-Contributions to improve the development container setup are welcome. Please feel free to submit issues and pull requests.
+5. **Start Building!**
+   - Begin developing your Cloudflare Worker project inside the container.
+
+## What's Included
+
+- Node.js and npm
+- Cloudflare Wrangler CLI
+- login script to enable login from a headless container
+
+## About This Template
+
+- Designed for use with VS Code Dev Containers.
+- Provides a quick and consistent environment for Cloudflare Worker development.
+- No manual setup required—just use this template and start coding.
+
+## Contributions
+
+Improvements and suggestions are welcome! Open issues or pull requests to help make this template even better.
 
 ## License
 
