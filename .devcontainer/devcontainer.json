@@ -1,4 +1,4 @@
-﻿{
+{
 "name": "Cloudflare Workers (TypeScript)",
 
 // Use our custom Dockerfile

@@ -1,4 +1,4 @@
-﻿FROM mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+FROM mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
 
 # Install wrangler CLI globally
 RUN npm install -g wrangler
